@@ -3,3 +3,17 @@ spring:
     mongodb:
       uri: mongodb://admin:admin@localhost:27017
       database: transaction
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include:
+          - health
+          - beans
+
+transaction:
+  validation:
+    enabled: true
+    banco: true
+    horario: true

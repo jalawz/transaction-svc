@@ -10,7 +10,7 @@ import java.time.LocalDateTime;
 @Getter
 @Setter
 @ToString
-public class RequestTransactionDto {
+public class RequestTransactionDto extends TransactionDto {
 
     @JsonIgnore
     private SituacaoEnum situacao;
